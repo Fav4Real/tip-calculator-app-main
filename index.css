@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Verydarkcyan: hsl(183, 100%, 15%);
+  --Darkgrayishcyan: hsl(186, 14%, 43%);
+  --Grayishcyan: hsl(184, 14%, 56%);
+  --Lightgrayishcyan: hsl(185, 41%, 84%);
+  --Verylightgrayishcyan: hsl(189, 41%, 97%);
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--Lightgrayishcyan);
+  color: var(--Darkgrayishcyan);
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin: 1em;
+}
+
+.main-container {
+  background-color: var(--White);
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+  height: 100vh;
+  padding: 1.3em;
+  /* padding-bottom: 5em; */
+}
+
+input {
+  background-color: var(--Verylightgrayishcyan);
+  border: 0;
+  width: 100%;
+  padding: 0.5em 0.5em;
+  border-radius: 0.3em;
+  font-size: 1.3rem;
+  color: var(--Verydarkcyan);
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+input:focus {
+  border: 5px solid green;
+}
+
+.tip-button {
+  width: 48%;
+  padding: 0.5em;
+  margin-top: 1em;
+  border-radius: 0.3em;
+  background-color: var(--Verydarkcyan);
+  color: var(--White);
+  font-size: 1.3rem;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+}
+
+.tip-button:hover {
+  background-color: #26c2ad;
+  cursor: pointer;
+  color: var(--Verydarkcyan);
+}
+
+.custom-input {
+  width: 48%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  color: var(--White);
+  font-size: 1.5rem;
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-container {
+  background-color: var(--Verydarkcyan);
+  margin-top: 1em;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.tip-result {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.reset-btn {
+  width: 98%;
+  padding: 0.8em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  background-color: #26c2ad;
+  border: 0;
+  margin-top: 2em;
+}
+
+.tip {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #26c2ad;
+}
+
+.color {
+  color: white;
+}
+
+.error-message {
+  display: none;
+  color: tomato;
+}
